@@ -1,3 +1,7 @@
+#Specialization-Machine Learning-University of Washington
+.ipynb_checkpoints/
+*.gl/
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
