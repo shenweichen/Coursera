@@ -1,6 +1,6 @@
 #Specialization-Machine Learning-University of Washington
 .ipynb_checkpoints/
-*.gl/
+#*.gl/
 
 # Windows image file caches
 Thumbs.db
