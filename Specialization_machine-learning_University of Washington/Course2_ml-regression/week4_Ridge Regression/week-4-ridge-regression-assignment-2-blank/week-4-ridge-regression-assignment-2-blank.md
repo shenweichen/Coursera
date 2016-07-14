@@ -19,6 +19,8 @@ import graphlab
 
 Dataset is from house sales in King County, the region where the city of Seattle, WA is located.
 
+Download Link:https://s3.amazonaws.com/static.dato.com/files/coursera/course-2/kc_house_data.gl.zip
+
 
 ```python
 sales = graphlab.SFrame('kc_house_data.gl/')

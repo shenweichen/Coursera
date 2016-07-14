@@ -11,6 +11,8 @@ In this notebook, we will run ridge regression multiple times with different L2 
 
 We will continue to use the House data from previous notebooks.  (In the next programming assignment for this module, you will implement your own ridge regression learning algorithm using gradient descent.)
 
+Download Link:https://s3.amazonaws.com/static.dato.com/files/coursera/course-2/kc_house_data.gl.zip
+
 # Fire up graphlab create
 
 

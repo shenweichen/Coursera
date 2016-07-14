@@ -106,6 +106,8 @@ print polynomial_sframe(tmp, 3)
 
 Let's use matplotlib to visualize what a polynomial regression looks like on some real data.
 
+Download Link:https://s3.amazonaws.com/static.dato.com/files/coursera/course-2/kc_house_data.gl.zip
+
 
 ```python
 sales = graphlab.SFrame('kc_house_data.gl/')
