@@ -1,34 +1,25 @@
-#include <iostream>
+/*#include <iostream>
 #include <cstring>
-using namespace std;
+using namespace std;*/
 class Array2
 {
-	int *ptr=NULL;
+	int *ptr;
 	int row;
 	int column;
-	int *now=NULL;
-	bool index;
 public:
 	Array2(int i,int j){
 		row = i;
 		column = j;
 		ptr = new int[row*column];
-		now = ptr;
-		index = 0;
 	};
 	Array2(){
-
+		ptr=NULL;
 	};
 	~Array2() {
-		if (ptr != NULL)
-			delete []ptr;
+		if (ptr )
+			delete[] ptr;
 	};
-	//Array2(const &A){
-	//};
-	Array2& operator= (int i){
-		*now = i;
-		return *this;
-	};
+
 	Array2& operator=(const Array2 &A){
 		if(ptr)
 			delete []ptr;
@@ -39,27 +30,18 @@ public:
 
 		return *this;
 	}
-	Array2& operator[](int i){
-		if(index ==0){
-			index=1;
-			now = ptr+column*i;
-			return *this;
-		}else{
-			index = 0;
-			now = now + i;
-			return *this;
-		}
+	int* operator[](int i){//重载的实际上是第二维的[]， 第一维的[]直接调用int型一维数组的定义
+
+	
+			return ptr+column*i;
 	};
 	int operator()(int i,int j){
-		return *(ptr+column*i+j);
+		return ptr[i*column+j];
 	}
-	friend ostream & operator<<(ostream &o, const Array2 &A);
+	
 	
 };
-ostream & operator<<(ostream &o, const Array2 &A) {
-	o << *(A.now);
-	return o;
-};
+/*
 int main() {
 
     Array2 a(3,4);
@@ -82,4 +64,4 @@ int main() {
         cout << endl;
     }
     return 0;
-}
+}*/

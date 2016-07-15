@@ -1,15 +1,15 @@
-#include<iostream>
+/*#include  <iostream>
 using namespace std;
 
 class A
 {
 public:
-    int val;
+    int val;*/
     A() {val = 0;}
     int& GetObj()
     {
         return val; 
-    }
+    }/*
 };
 int main()
 {
@@ -17,4 +17,4 @@ int main()
     cout << a.val << endl;
     a.GetObj() = 5;
     cout << a.val << endl;
-}
+}*/
