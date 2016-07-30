@@ -21,20 +21,18 @@ import graphlab
 ```
 
 # Load in house sales data
-
+#### Download Link:https://s3.amazonaws.com/static.dato.com/files/coursera/course-2/kc_house_data.gl.zip
 Dataset is from house sales in King County, the region where the city of Seattle, WA is located.
-
-Download Link:https://s3.amazonaws.com/static.dato.com/files/coursera/course-2/kc_house_data.gl.zip
 
 
 ```python
 sales = graphlab.SFrame('kc_house_data.gl/')
 ```
 
-    This trial license of GraphLab Create is assigned to 519589356@qq.com and will expire on July 24, 2016. Please contact trial@dato.com for licensing options or to request a free non-commercial license for personal or academic use.
+    This non-commercial license of GraphLab Create for academic use is assigned to last.fantasy@qq.com and will expire on July 25, 2017.
     
 
-    [INFO] graphlab.cython.cy_server: GraphLab Create v1.10.1 started. Logging: C:\Users\51958\AppData\Local\Temp\graphlab_server_1467599987.log.0
+    [INFO] graphlab.cython.cy_server: GraphLab Create v2.1 started. Logging: C:\Users\51958\AppData\Local\Temp\graphlab_server_1469857525.log.0
     
 
 If we want to do any "feature engineering" like creating new features or adjusting existing ones we should do this directly using the SFrames as seen in the other Week 2 notebook. For this notebook, however, we will work with the existing features.
@@ -199,7 +197,7 @@ def regression_gradient_descent(feature_matrix, output, initial_weights, step_si
     weights = np.array(initial_weights) # make sure it's a numpy array
     while not converged:
         # compute the predictions based on feature_matrix and weights using your predict_output() function
-        predictions = predict_output(feature_matrix,weights);
+        predictions = predict_output(feature_matrix,weights)
         # compute the errors as predictions - output
         errors = predictions - output
         gradient_sum_squares = 0 # initialize the gradient sum of squares
@@ -209,10 +207,9 @@ def regression_gradient_descent(feature_matrix, output, initial_weights, step_si
             # compute the derivative for weight[i]:
             derivative = feature_derivative(errors,feature_matrix[:,i])
             # add the squared value of the derivative to the gradient sum of squares (for assessing convergence)
-            gradient_sum_squares = gradient_sum_squares + (derivative*derivative)
+            gradient_sum_squares += derivative*derivative
             # subtract the step size times the derivative from the current weight
-            #print weights[i],step_size*derivative
-            weights[i] = weights[i] - (step_size*derivative)
+            weights[i] -= step_size*derivative
         # compute the square-root of the gradient sum of squares to get the gradient matnigude:
         gradient_magnitude = sqrt(gradient_sum_squares)
         if gradient_magnitude < tolerance:
@@ -257,18 +254,6 @@ How do your weights compare to those achieved in week 1 (don't expect them to be
 
 **Quiz Question: What is the value of the weight for sqft_living -- the second element of ‘simple_weights’ (rounded to 1 decimal place)?**
 
-
-```python
-simple_weights[1]
-```
-
-
-
-
-    281.91211911641625
-
-
-
 Use your newly estimated weights and your predict_output() function to compute the predictions on all the TEST data (you will need to create a numpy array of the test feature_matrix and test output first:
 
 
@@ -280,9 +265,7 @@ Now compute your predictions using test_simple_feature_matrix and your weights f
 
 
 ```python
-
 predicted_price = predict_output(test_simple_feature_matrix,simple_weights)
-
 ```
 
 **Quiz Question: What is the predicted price for the 1st house in the TEST data set for model 1 (round to nearest dollar)?**
@@ -304,11 +287,15 @@ Now that you have the predictions on test data, compute the RSS on the test data
 
 ```python
 RSS = ((predicted_price-test_output)**2).sum()
-print RSS
+RSS
 ```
 
-    2.75400047593e+14
-    
+
+
+
+    275400047593155.94
+
+
 
 # Running a multiple regression
 
@@ -374,15 +361,17 @@ Now use your predictions and the output to compute the RSS for model 2 on TEST d
 
 ```python
 RSS = ((predictions-test_output)**2).sum()
-print RSS
+RSS
 ```
 
-    2.70263446465e+14
-    
+
+
+
+    270263446465244.06
+
+
 
 **Quiz Question: Which model (1 or 2) has lowest RSS on all of the TEST data? **
-
-**model2**
 
 
 ```python

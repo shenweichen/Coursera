@@ -21,17 +21,15 @@ import graphlab
 
 Dataset is from house sales in King County, the region where the city of Seattle, WA is located.
 
-Download Link:https://s3.amazonaws.com/static.dato.com/files/coursera/course-2/kc_house_data.gl.zip
-
 
 ```python
 sales = graphlab.SFrame('kc_house_data.gl/')
 ```
 
-    This trial license of GraphLab Create is assigned to 519589356@qq.com and will expire on July 24, 2016. Please contact trial@dato.com for licensing options or to request a free non-commercial license for personal or academic use.
+    [INFO] graphlab.cython.cy_server: GraphLab Create v2.1 started. Logging: C:\Users\51958\AppData\Local\Temp\graphlab_server_1469847108.log.0
     
 
-    [INFO] graphlab.cython.cy_server: GraphLab Create v1.10.1 started. Logging: C:\Users\51958\AppData\Local\Temp\graphlab_server_1467511236.log.0
+    This non-commercial license of GraphLab Create for academic use is assigned to last.fantasy@qq.com and will expire on July 25, 2017.
     
 
 # Split data into training and testing
@@ -96,17 +94,17 @@ Complete the following function (or write your own) to compute the simple linear
 ```python
 def simple_linear_regression(input_feature, output):
     # compute the sum of input_feature and output
-    x_sum = input_feature.sum()
-    y_sum = output.sum()
-    num_data = input_feature.size()
+    x = input_feature.sum()
+    y = output.sum()
+    N = output.size()
     # compute the product of the output and the input_feature and its sum
-    xy_sum = (input_feature*output).sum()
+    yx = (input_feature*output).sum()
     # compute the squared value of the input_feature and its sum
-    xx_sum = (input_feature*input_feature).sum()
+    x2 = (input_feature*input_feature).sum()
     # use the formula for the slope
-    slope = (xy_sum-x_sum*y_sum/num_data)/(xx_sum-x_sum*x_sum/num_data)
+    slope = (yx - (y*x)/N)/(x2-x*x/N)
     # use the formula for the intercept
-    intercept = (y_sum - slope*x_sum)/num_data
+    intercept = (y - slope*x)/N
     return (intercept, slope)
 ```
 
@@ -147,7 +145,7 @@ Now that we have the model parameters: intercept & slope we can make predictions
 ```python
 def get_regression_predictions(input_feature, intercept, slope):
     # calculate the predicted values:
-    predicted_values = intercept + input_feature*slope
+    predicted_values = intercept + input_feature *slope
     return predicted_values
 ```
 
@@ -175,11 +173,11 @@ Complete the following (or write your own) function to compute the RSS of a simp
 ```python
 def get_residual_sum_of_squares(input_feature, output, intercept, slope):
     # First get the predictions
-    prediction = input_feature * slope + intercept
+    predictions = get_regression_predictions(input_feature,intercept,slope)
     # then compute the residuals (since we are squaring it doesn't matter which order you subtract)
-    residuals = prediction - output
+    RSS = (predictions - output)
     # square the residuals and add them up
-    RSS = (residuals*residuals).sum()
+    RSS = (RSS*RSS).sum()
     return(RSS)
 ```
 
@@ -242,7 +240,7 @@ Use your simple linear regression function to estimate the regression parameters
 
 ```python
 # Estimate the slope and intercept for predicting 'price' based on 'bedrooms'
-bedroom_slope,bedroom_intercept = simple_linear_regression(train_data['bedrooms'], train_data['price'])
+bedrooms_slope,bedrooms_intercept = simple_linear_regression(train_data['bedrooms'],train_data['price'])
 
 ```
 
@@ -255,24 +253,19 @@ Now we have two models for predicting the price of a house. How do we know which
 
 ```python
 # Compute RSS when using bedrooms on TEST data:
-rss_prices_on_bedroom_test = get_residual_sum_of_squares(test_data['bedrooms'], test_data['price'], bedroom_intercept, bedroom_slope)
-print 'The RSS of predicting Prices based on Square Feet is : ' + str(rss_prices_on_bedroom_test)
+rss_prices_on_bedrooms = get_residual_sum_of_squares(test_data['bedrooms'], test_data['price'], bedrooms_intercept, bedrooms_slope)
+print rss_prices_on_bedrooms
 ```
 
-    The RSS of predicting Prices based on Square Feet is : 4.99664719812e+14
+    4.99664719812e+14
     
 
 
 ```python
 # Compute RSS when using squarefeet on TEST data:
-rss_prices_on_sqft_test = get_residual_sum_of_squares(test_data['sqft_living'], test_data['price'], sqft_intercept, sqft_slope)
-print 'The RSS of predicting Prices based on Square Feet is : ' + str(rss_prices_on_sqft_test)
+rss_prices_on_sqft = get_residual_sum_of_squares(test_data['sqft_living'], test_data['price'], sqft_intercept, sqft_slope)
+print rss_prices_on_sqft
 ```
 
-    The RSS of predicting Prices based on Square Feet is : 2.75402936247e+14
+    2.75402936247e+14
     
-
-
-```python
-
-```

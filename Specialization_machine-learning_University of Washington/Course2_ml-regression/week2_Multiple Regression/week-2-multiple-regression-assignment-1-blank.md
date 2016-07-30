@@ -18,20 +18,18 @@ import graphlab
 ```
 
 # Load in house sales data
-
+#### Download Link:https://s3.amazonaws.com/static.dato.com/files/coursera/course-2/kc_house_data.gl.zip
 Dataset is from house sales in King County, the region where the city of Seattle, WA is located.
-
-Download Link:https://s3.amazonaws.com/static.dato.com/files/coursera/course-2/kc_house_data.gl.zip
 
 
 ```python
 sales = graphlab.SFrame('kc_house_data.gl/')
 ```
 
-    This trial license of GraphLab Create is assigned to 519589356@qq.com and will expire on July 24, 2016. Please contact trial@dato.com for licensing options or to request a free non-commercial license for personal or academic use.
+    [INFO] graphlab.cython.cy_server: GraphLab Create v2.1 started. Logging: C:\Users\51958\AppData\Local\Temp\graphlab_server_1469848628.log.0
     
 
-    [INFO] graphlab.cython.cy_server: GraphLab Create v1.10.1 started. Logging: C:\Users\51958\AppData\Local\Temp\graphlab_server_1467543608.log.0
+    This non-commercial license of GraphLab Create for academic use is assigned to last.fantasy@qq.com and will expire on July 25, 2017.
     
 
 # Split data into training and testing.
@@ -101,7 +99,7 @@ example_model = graphlab.linear_regression.create(train_data, target = 'price', 
 
 
 
-<pre>| 1         | 2        | 1.012521     | 4146407.600631     | 258679.804477 |</pre>
+<pre>| 1         | 2        | 1.011978     | 4146407.600631     | 258679.804477 |</pre>
 
 
 
@@ -159,11 +157,11 @@ Now that we can make predictions given the model, let's write a function to comp
 ```python
 def get_residual_sum_of_squares(model, data, outcome):
     # First get the predictions
-    predict = model.predict(data);
+    predictions = model.predict(data)
     # Then compute the residuals/errors
-    residuals = outcome - predict;
+    errors = outcome - predictions
     # Then square and add them up
-    RSS = (residuals*residuals).sum()
+    RSS = (errors*errors).sum()
     return(RSS)    
 ```
 
@@ -226,7 +224,6 @@ test_data['lat_plus_long'] = test_data['lat']+test_data['long']
 #test_data['bed_bath_rooms'].mean()
 #test_data['log_sqft_living'].mean()
 test_data['lat_plus_long'].mean()
-
 ```
 
 
@@ -256,15 +253,15 @@ Now that you have the features, learn the weights for the three different models
 ```python
 # Learn the three models: (don't forget to set validation_set = None)
 model_1 = graphlab.linear_regression.create(train_data,
-                                          features=['sqft_living', 'bedrooms', 'bathrooms', 'lat','long'],
+                                          features=model_1_features,
                                           target='price',
                                           validation_set = None)
 model_2 = graphlab.linear_regression.create(train_data,
-                                          features=['sqft_living', 'bedrooms', 'bathrooms', 'lat','long','bed_bath_rooms'],
+                                          features=model_2_features,
                                           target='price',
                                           validation_set = None)
 model_3 = graphlab.linear_regression.create(train_data,
-                                          features=['sqft_living', 'bedrooms', 'bathrooms', 'lat','long','bedrooms_squared', 'log_sqft_living', 'lat_plus_long'],
+                                          features=model_3_features,
                                           target='price',
                                           validation_set = None)
 ```
@@ -314,7 +311,7 @@ model_3 = graphlab.linear_regression.create(train_data,
 
 
 
-<pre>| 1         | 2        | 0.015696     | 4074878.213096     | 236378.596455 |</pre>
+<pre>| 1         | 2        | 0.017802     | 4074878.213096     | 236378.596455 |</pre>
 
 
 
@@ -374,7 +371,7 @@ model_3 = graphlab.linear_regression.create(train_data,
 
 
 
-<pre>| 1         | 2        | 0.027879     | 4014170.932927     | 235190.935428 |</pre>
+<pre>| 1         | 2        | 0.019468     | 4014170.932927     | 235190.935428 |</pre>
 
 
 
@@ -402,16 +399,24 @@ model_3 = graphlab.linear_regression.create(train_data,
 
 
 
-<pre>Number of features          : 8</pre>
+<pre>Number of features          : 9</pre>
 
 
 
-<pre>Number of unpacked features : 8</pre>
+<pre>Number of unpacked features : 9</pre>
 
 
 
-<pre>Number of coefficients    : 9</pre>
+<pre>Number of coefficients    : 10</pre>
 
+
+
+```python
+# Examine/extract each model's coefficients:
+#model_1.get("coefficients")
+model_2.get("coefficients")
+#model_3.get("coefficients")
+```
 
 
 <pre>Starting Newton Method</pre>
@@ -434,7 +439,7 @@ model_3 = graphlab.linear_regression.create(train_data,
 
 
 
-<pre>| 1         | 2        | 0.007634     | 3220897.833490     | 228259.060773 |</pre>
+<pre>| 1         | 2        | 0.014541     | 3193229.177894     | 228200.043155 |</pre>
 
 
 
@@ -448,14 +453,6 @@ model_3 = graphlab.linear_regression.create(train_data,
 
 <pre></pre>
 
-
-
-```python
-# Examine/extract each model's coefficients:
-#model_1.get("coefficients")
-model_2.get("coefficients")
-#model_3.get("coefficients")
-```
 
 
 
@@ -539,7 +536,7 @@ RSS_1,RSS_2,RSS_3
 
 
 
-    (971328233543667.1, 961592067855751.0, 905744624371633.8)
+    (971328233543667.1, 961592067855751.0, 905276314555406.0)
 
 
 
@@ -559,7 +556,7 @@ RSS_1,RSS_2,RSS_3
 
 
 
-    (226568089092795.38, 224368799993615.4, 287197673034428.0)
+    (226568089092795.38, 224368799993615.4, 251829318951767.94)
 
 
 
