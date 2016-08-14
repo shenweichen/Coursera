@@ -2,7 +2,8 @@
 .ipynb_checkpoints/
 *.gl/
 *.csv
-
+#VScode config
+.vscode/
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
