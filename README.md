@@ -20,3 +20,6 @@
 
 * Speicilization Statistics with R-Duke University
   * [Introduction to Probability and Data](https://github.com/shenweichen/Coursera/tree/master/Specialization_statistics-with-R_Duke%20University/Course1_probability-intro)
+
+* Speicilization Data Structures and Algorithms-UC San Diego 
+  * Algorithmic Toolbox
