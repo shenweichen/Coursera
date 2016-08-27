@@ -1,4 +1,4 @@
-# Data Structures
+# [Data Structures](https://www.coursera.org/learn/data-structures/home/welcome)
 
 ## week1 Basic Data Structures
 
@@ -6,7 +6,7 @@
 * 栈和队列
 * 树和树的遍历
 * 动态数组
-* 平摊分析
+* 平摊分析 **这部分没搞懂，以后重新做下作业**
 
 ## week2 Priority Queues and Disjoint Sets
 
@@ -25,6 +25,6 @@
 
 ## week4 Binary Search Trees
 
-  * 二叉树的遍历，递归，迭代
-  * 平衡二叉树
-  * Splay伸展树 查找，调整，添加，删除
+* 二叉树的遍历，先序，中序，后序的递归和迭代形式，层序遍历
+* 平衡二叉树
+* Splay伸展树 查找，调整，添加，删除
