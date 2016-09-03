@@ -22,5 +22,12 @@
 ## week4 Paths in Graphs 2
 
 * 作业
-  1. dijkstra:单元最短路径
-  2.
+  1. dijkstra:`非负权图`Dijkstra单源最短路径
+  2. negative_cycle:`带负权图`Bellman-ford单源最短路径，以及判定是否存在负权环。
+  3. shortest_paths：`带负权环图`求单源最短路径 判断包含负权环的路径。如何判断负权环是否源点可达？，如何搜索负权环可达的点？
+
+## week5 Paths in Graphs 2
+
+* 作业
+  1. connecting_points:Kruskal MST 可以尝试用Prim
+  2. clustering:Kruskal MST
