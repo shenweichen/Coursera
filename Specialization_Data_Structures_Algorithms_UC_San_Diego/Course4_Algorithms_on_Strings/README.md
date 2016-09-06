@@ -7,3 +7,14 @@
   2. Implement TrieMatching：利用Trie树对Text进行匹配
   3. Extend TrieMatching ：扩展Trie树匹配
 
+## week2 Burrows-Wheeler Transform and Suffix Arrays
+
+* 作业
+  1. bwt: construct BWT(Text) by sorting all cyclic rotations of BWT(Text)
+  2. bwtinverse:根据 Burrows–Wheeler Transform重构原始字符串 
+
+## week3 Algorithmic Challenges
+
+* 作业
+  1. kmp:KMP
+
