@@ -42,7 +42,6 @@ int main() {
       opening_brackets_stack.pop();
     }
   }
-  int t = opening_brackets_stack.size();
   // Printing answer, write your code here
   if (ans == -1 && opening_brackets_stack.empty())
     std::cout << "Success" << std::endl;

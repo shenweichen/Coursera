@@ -8,6 +8,12 @@
 * 动态数组
 * 平摊分析 **这部分没搞懂，以后重新做下作业**
 
+| Assignments                             | Tags       | C++  | Python                      | Java                           |
+| --------------------------------------- | ---------- | ---- | --------------------------- | ------------------------------ |
+| check_brackets                          | 栈          | *    | *`list`,`pop(index)`        | *`util.Stack`,`peek()`         |
+| tree_height                             |            | *    | *`嵌套list`,`enumerate`,`map` | *`嵌套ArrayList`,`get()`,`add()` |
+| process_packages                        |            | *    | *`sys.stdin.readline()`    | *`ArrayList`,`remove()`        |
+
 ## week2 Priority Queues and Disjoint Sets
 
 * 建堆，堆排序，优先队列

@@ -2,5 +2,13 @@
 
 ## week2 Introduction
 
-* 最大公约数，最小公倍数
+| Assignments                             | Tags       | C++  | Python | Java |
+| --------------------------------------- | ---------- | ---- | ------ | ---- |
+| fibonacci                               |            |*    |*      |*    |
+| fibonacci_last_digit                    |            |*    |*      |*    |
+| gcd                                     | 最大公约数      |*    |*      |*    |
+| lcm                                     | 最小公倍数      |*    |*      |*    |
+| fibonacci_huge                          |            |      |        |      |
+| fibonacci_sum_last_digit                |            |      |        |      |
+| fibonacci_partial_sum                   |            |      |        |      |
 

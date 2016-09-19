@@ -30,3 +30,6 @@
 
 * Specialization Fundamentals of Computing-Rice University
   * Principles of Computing 1
+
+* Specialization Recommender System-University of Minnesota
+  * Introduction to Recommender Systems: Non-Personalized and Content-Based
