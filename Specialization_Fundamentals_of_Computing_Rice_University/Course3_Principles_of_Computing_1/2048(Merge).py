@@ -20,6 +20,4 @@ def merge(line):
         else:
             pre += 1
             ans[pre] = line[cur]
-        
-
     return ans
