@@ -36,3 +36,8 @@
 
 * Specialization Recommender System-University of Minnesota
   * Introduction to Recommender Systems: Non-Personalized and Content-Based
+
+* Specialization Applied Data Science with Python
+  * Introduction to Data Science in Python
+
+* Neural Networks for Machine Learning-University of Toronto
