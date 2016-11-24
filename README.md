@@ -3,7 +3,7 @@
 * [Neural Networks for Machine Learning-University of Toronto](https://github.com/shenweichen/Coursera/tree/master/Neural_Networks_for_Machine_Learning_University_of_Toronto)
 
 * Specialization Applied Data Science with Python
-  * Introduction to Data Science in Python
+  * [Introduction to Data Science in Python](https://github.com/shenweichen/Coursera/tree/master/Specialization_Applied_Data_Science_with_Python_University_of_Michigan/Course_1_Introduction_to_Data_Science_in_Python)
 
 * Speicialization Data Science-Johns Hopkins University
   * The Data Scientist’s Toolbox
