@@ -5,6 +5,11 @@
 * Specialization Applied Data Science with Python
   * [Introduction to Data Science in Python](https://github.com/shenweichen/Coursera/tree/master/Specialization_Applied_Data_Science_with_Python_University_of_Michigan/Course_1_Introduction_to_Data_Science_in_Python)
 
+* Specialization Big Data-UCSD
+  * Introduction to Big Data
+  * Big Data Modeling and Management Systems
+  * Big Data Interation and Processing
+
 * Speicialization Data Science-Johns Hopkins University
   * The Data Scientist’s Toolbox
   * [R Programming](https://github.com/shenweichen/Coursera/tree/master/Specialization_Data_Science_Johns_Hopkins_University/Course2_R_Programming)
