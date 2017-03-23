@@ -37,6 +37,7 @@
 * [Specialization Probabilistic Graphical Models-Stanford University](https://github.com/shenweichen/Coursera/tree/master/Specialization_Probabilistic_Graphical_Models_Stanford_University)
   * Probabilistic Graphical Models 1: Representation
   * Probabilistic Graphical Models 2: Inference
+  * Probabilistic Graphical Models 3: Learning
 
 * [Specialization 程序设计与算法-Peking University](https://github.com/shenweichen/Coursera/tree/master/Specialization_Program_Design_Algorithm_Peking_University)
   * 计算导论与C语言基础
