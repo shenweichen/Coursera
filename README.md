@@ -13,6 +13,7 @@
 * [Specialization Data Mining-UIUC](https://github.com/shenweichen/Coursera/tree/master/Specialization_Data_Mining_UIUC)
   * Text Retrieval and Search Engines
   * Text Mining and Analytics
+  * Pattern Discovery in Data Mining
 
 * Specialization Data Science-Johns Hopkins University
   * The Data Scientist’s Toolbox

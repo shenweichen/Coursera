@@ -22,7 +22,7 @@
 
 * 作业：
   1. 由中根序列和后根序列重建二叉树(RE)
-  2. 实现堆结构：`Insert,Remove,shiftUp,shiftDown`
+  2. 实现堆结构：`Insert,Remove,siftUp,siftDown`
   3. 文本二叉树(X)
 
 ## week6 二叉树应用
