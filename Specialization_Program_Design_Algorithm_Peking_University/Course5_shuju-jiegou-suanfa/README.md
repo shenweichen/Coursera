@@ -1,5 +1,6 @@
 # [数据结构基础](https://www.coursera.org/learn/shuju-jiegou-suanfa/home/welcome)
 
+not support for for in expression
 ## week2 线性表
 
 * 顺序表，链表
@@ -30,6 +31,9 @@
 * 作业：
   1. Huffman编码树：堆实现优先队列
   2. 二叉搜索树：如何在不知道数据个数的情况下读取数据？
+## week7 树
+* 作业:
+  1. 森林的带度数层次序列存储
 
 ## week8 图
 

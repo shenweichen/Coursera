@@ -14,6 +14,7 @@
   * Text Retrieval and Search Engines
   * Text Mining and Analytics
   * Pattern Discovery in Data Mining
+  * Cluster Analysis in Data Mining
 
 * Specialization Data Science-Johns Hopkins University
   * The Data Scientist’s Toolbox
