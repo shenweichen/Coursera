@@ -50,6 +50,7 @@
 
 * Specialization Recommender System-University of Minnesota
   * Introduction to Recommender Systems: Non-Personalized and Content-Based
+  * Nearest Neighbor Collaborative Filtering
 
 * Specialization Statistics with R-Duke University
   * [Introduction to Probability and Data](https://github.com/shenweichen/Coursera/tree/master/Specialization_Statistics_with_R_Duke_University/Course1_Introduction_to_Probability_and_Data)
