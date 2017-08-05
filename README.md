@@ -2,9 +2,11 @@
 
 * [Neural Networks for Machine Learning-University of Toronto](./Neural_Networks_for_Machine_Learning_University_of_Toronto)
 
-* Specialization Applied Data Science with Python
-  * [Introduction to Data Science in Python](./Specialization_Applied_Data_Science_with_Python_University_of_Michigan/Course_1_Introduction_to_Data_Science_in_Python)
+* 機器學習基石上 (Machine Learning Foundations)---Mathematical Foundations
 
+* [Specialization Applied Data Science with Python](./Specialization_Applied_Data_Science_with_Python_University_of_Michigan)
+  * Introduction to Data Science in Python
+  * Applied Machine Learning in Python
 * [Specialization Big Data-UCSD](./Specialization_Big_Data_UC_San_Diego)
   * Introduction to Big Data
   * Big Data Modeling and Management Systems
