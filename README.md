@@ -4,6 +4,11 @@
 
 * 機器學習基石上 (Machine Learning Foundations)---Mathematical Foundations
 
+* [Specialization Deep Learning](./Specialization_Deep_Learning_deeplearning.ai)
+  * Neural Networks and Deep Learning
+  * Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization
+  * Structuring Machine Learning Projects
+
 * [Specialization Applied Data Science with Python](./Specialization_Applied_Data_Science_with_Python_University_of_Michigan)
   * Introduction to Data Science in Python
   * Applied Machine Learning in Python
