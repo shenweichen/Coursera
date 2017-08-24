@@ -1,5 +1,6 @@
 # Coursera Assignments
 
+* [Learn to Program: Crafting Quality Code](./Learn_to_Program_Crafting_Quality_Code_University_of_Toronto)
 * [Neural Networks for Machine Learning-University of Toronto](./Neural_Networks_for_Machine_Learning_University_of_Toronto)
 
 * [Specialization Deep Learning](./Specialization_Deep_Learning_deeplearning.ai)
