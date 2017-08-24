@@ -2,8 +2,6 @@
 
 * [Neural Networks for Machine Learning-University of Toronto](./Neural_Networks_for_Machine_Learning_University_of_Toronto)
 
-* 機器學習基石上 (Machine Learning Foundations)---Mathematical Foundations
-
 * [Specialization Deep Learning](./Specialization_Deep_Learning_deeplearning.ai)
   * Neural Networks and Deep Learning
   * Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization
@@ -64,3 +62,6 @@
 * [Specialization Statistics with R-Duke University](./Specialization_Statistics_with_R_Duke_University)
   * Introduction to Probability and Data
   * Inferential Statistics
+* [The Unix Workbench-Johns Hopkins University](./The_Unix_Workbench_Johns_Hopkins_University)
+* 機器學習基石上 (Machine Learning Foundations)---Mathematical Foundations
+
