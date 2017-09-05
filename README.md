@@ -1,6 +1,9 @@
 # Coursera Assignments
 
+* [Bayesian Statistics From Concept to Data Analysis](./Bayesian_Statistics_From_Concept_to_Data_Analysis_UC_Santa_Cruz)
+
 * [Learn to Program: Crafting Quality Code](./Learn_to_Program_Crafting_Quality_Code_University_of_Toronto)
+
 * [Neural Networks for Machine Learning-University of Toronto](./Neural_Networks_for_Machine_Learning_University_of_Toronto)
 
 * [Specialization Deep Learning](./Specialization_Deep_Learning_deeplearning.ai)
