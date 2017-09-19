@@ -6,10 +6,6 @@
 
 * [Neural Networks for Machine Learning-University of Toronto](./Neural_Networks_for_Machine_Learning_University_of_Toronto)
 
-* [Specialization Deep Learning](./Specialization_Deep_Learning_deeplearning.ai)
-  * Neural Networks and Deep Learning
-  * Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization
-  * Structuring Machine Learning Projects
 
 * [Specialization Applied Data Science with Python](./Specialization_Applied_Data_Science_with_Python_University_of_Michigan)
   * Introduction to Data Science in Python
@@ -35,6 +31,14 @@
   * [Data Structures](./Specialization_Data_Structures_Algorithms_UC_San_Diego/Course2_Data_Structures)
   * [Algorithms on Graphs](./Specialization_Data_Structures_Algorithms_UC_San_Diego/Course3_Algorithms_on_Graphs)
   * [Algorithms on Strings](./Specialization_Data_Structures_Algorithms_UC_San_Diego/Course4_Algorithms_on_Strings)
+
+* [Specialization Deep Learning](./Specialization_Deep_Learning_deeplearning.ai)
+  * Neural Networks and Deep Learning
+  * Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization
+  * Structuring Machine Learning Projects
+
+* [Specialization Functional Programming in Scala](./Specialization_Functional_Programming_in_Scala)
+  * Functional Programming Principles in Scala
 
 * Specialization Fundamentals of Computing-Rice University
   * Principles of Computing 1
