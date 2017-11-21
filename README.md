@@ -1,4 +1,7 @@
 # Coursera Assignments
+This repository is aimed to help Coursera learners who have difficulties in their learning process.  
+The quiz and programming homework is belong to coursera.Please **Do Not** use them for any other purposes.  
+Please feel free to contact me if you have any problem,my email is wcshen1994@163.com.
 
 * [Bayesian Statistics From Concept to Data Analysis](./Bayesian_Statistics_From_Concept_to_Data_Analysis_UC_Santa_Cruz)
 
@@ -71,5 +74,4 @@
   * Introduction to Probability and Data
   * Inferential Statistics
 * [The Unix Workbench-Johns Hopkins University](./The_Unix_Workbench_Johns_Hopkins_University)
-* 機器學習基石上 (Machine Learning Foundations)---Mathematical Foundations
 
