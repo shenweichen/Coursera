@@ -9,10 +9,10 @@ Please feel free to contact me if you have any problem,my email is wcshen1994@16
 
 * [Neural Networks for Machine Learning-University of Toronto](./Neural_Networks_for_Machine_Learning_University_of_Toronto)
 
-
 * [Specialization Applied Data Science with Python](./Specialization_Applied_Data_Science_with_Python_University_of_Michigan)
   * Introduction to Data Science in Python
   * Applied Machine Learning in Python
+
 * [Specialization Big Data-UCSD](./Specialization_Big_Data_UC_San_Diego)
   * Introduction to Big Data
   * Big Data Modeling and Management Systems
@@ -24,22 +24,23 @@ Please feel free to contact me if you have any problem,my email is wcshen1994@16
   * Pattern Discovery in Data Mining
   * Cluster Analysis in Data Mining
 
-* Specialization Data Science-Johns Hopkins University
+* [Specialization Data Science-Johns Hopkins University](./Specialization_Data_Science_Johns_Hopkins_University)
   * The Data Scientist’s Toolbox
-  * [R Programming](./Specialization_Data_Science_Johns_Hopkins_University/Course2_R_Programming)
+  * R Programming
   * Getting and Cleaning Data
 
 * [Specialization Data Structures & Algorithms-UC San Diego](./Specialization_Data_Structures_Algorithms_UC_San_Diego)
-  * [Algorithmic Toolbox](./Specialization_Data_Structures_Algorithms_UC_San_Diego/Course1_Algorithmic_Toolbox)
-  * [Data Structures](./Specialization_Data_Structures_Algorithms_UC_San_Diego/Course2_Data_Structures)
-  * [Algorithms on Graphs](./Specialization_Data_Structures_Algorithms_UC_San_Diego/Course3_Algorithms_on_Graphs)
-  * [Algorithms on Strings](./Specialization_Data_Structures_Algorithms_UC_San_Diego/Course4_Algorithms_on_Strings)
+  * Algorithmic Toolbox
+  * Data Structures
+  * Algorithms on Graphs
+  * Algorithms on Strings
 
 * [Specialization Deep Learning](./Specialization_Deep_Learning_deeplearning.ai)
   * Neural Networks and Deep Learning
   * Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization
   * Structuring Machine Learning Projects
   * Convolutional Neural Networks
+  * Sequence Models
 
 * [Specialization Functional Programming in Scala](./Specialization_Functional_Programming_in_Scala)
   * Functional Programming Principles in Scala
@@ -75,4 +76,3 @@ Please feel free to contact me if you have any problem,my email is wcshen1994@16
   * Introduction to Probability and Data
   * Inferential Statistics
 * [The Unix Workbench-Johns Hopkins University](./The_Unix_Workbench_Johns_Hopkins_University)
-
