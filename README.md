@@ -51,7 +51,7 @@ Please feel free to contact me if you have any problem,my email is wcshen1994@16
 * Specialization Fundamentals of Computing-Rice University
   * Principles of Computing 1
 
-* [Specialization Meachine Learning-University of Washington](./Specialization_Machine_Learning_University_of_Washington)
+* [Specialization Machine Learning-University of Washington](./Specialization_Machine_Learning_University_of_Washington)
   * Machine Learning Foundations: A Case Study Approach
   * Machine Learning: Regression
   * Machine Learning: Classification
