@@ -45,7 +45,7 @@ private:
     if (minIndex != i) { //当前位置不是最小值，交换
       swap(data_[i], data_[minIndex]);
       swaps_.push_back(make_pair(i, minIndex));
-      ShiftDown(minIndex); //对交换后的孩子结点依次向下调整
+      SiftDown(minIndex); //对交换后的孩子结点依次向下调整
     }
   }
   void GenerateSwaps() {
